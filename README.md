@@ -25,7 +25,7 @@ A Result Management System using HTML, CSS, JavaScript, Nodejs, Expressjs, Ejs a
 
 ## Frontend
 
-1. Open URL "https://localhost:3000" on a browser.
+1. Open URL "http://localhost:3000" on a browser.
 
 ## Staff Login Username and Password
 
