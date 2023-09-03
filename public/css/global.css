@@ -1,0 +1,57 @@
+/* Navigation Text */
+.navbar-text {
+  margin: 0;
+  padding: 0;
+  color: #c5dff8;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+/* Disable User Selection for Certain Elements */
+h1,
+h2,
+p,
+a,
+img {
+  user-select: none;
+}
+
+/* Button Styles */
+.staffloginbtn,
+.signupbtn {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.staffloginbtn {
+  background-color: #1d5d9b;
+  color: white;
+  border-color: #1d5d9b;
+}
+
+.signupbtn {
+  color: #1d5d9b;
+  border-color: #1d5d9b;
+}
+
+.staffloginbtn:hover {
+  background-color: #c5dff8;
+  color: #155187;
+  border-color: #155187;
+}
+
+.signupbtn:hover {
+  background-color: #c5dff8;
+  color: #155187;
+  border-color: #c5dff8;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+  background-color: #164b60;
+}
+
+/* Navbar Text Color on Hover */
+.nav-link:hover .navbar-text {
+  color: #4f709c;
+}

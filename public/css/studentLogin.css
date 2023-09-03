@@ -1,0 +1,73 @@
+.studentlogin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.studentlogin-form {
+  color: white;
+  background: #136a8a;
+  border-radius: 8px;
+  padding: 50px;
+  width: 35%;
+}
+
+.studentlogin-form .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studentlogin-form .head .company {
+  font-size: 2.2em;
+}
+
+.studentlogin-form .msg {
+  text-align: center;
+}
+
+.studentlogin-form .form input::placeholder {
+  color: #d3d3d3;
+}
+
+.studentlogin-form .form input[type="number"].number,
+.studentlogin-form .form input[type="date"].dateofbirth {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.studentlogin-form .form .btn-login {
+  background: none;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 0px 2px white;
+  border-radius: 3px;
+  padding: 5px 2em;
+  transition: 0.5s;
+}
+
+.studentlogin-form .form .btn-login:hover {
+  background: white;
+  color: dimgray;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .studentlogin-form {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .studentlogin-form .form input.number,
+  .studentlogin-form .form input.dateofbirth {
+    font-size: 0.9em;
+  }
+}

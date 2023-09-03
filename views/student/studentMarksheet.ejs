@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Marksheet</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/37a1c32e18.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/studentMarksheet.css" />
+  </head>
+  <body class="marksheet-body">
+    <!-- Navbar -->
+    <header>
+      <div class="px-3 py-2 border-bottom navbar-custom">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <img
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+              src="../../svg/logo.png"
+              alt="Custom SVG Image"
+              width="70"
+              height="70"
+            />
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            >
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">About Us</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">Instructions</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">Features</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="px-3 py-2 border-bottom mb-3">
+        <div class="container d-flex flex-wrap justify-content-end">
+          <div class="text-end">
+            <a href="/" type="button" class="btn staffloginbtn">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <div class="container">
+      <div class="marksheet">
+        <h1>Student Marksheet</h1>
+        <div class="student-info">
+          <p>PRN: <%= student.prn %></p>
+          <p>Name: <%= student.fname %> <%= student.lname %></p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Module</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Operating Systems</td>
+              <td><%= student.osModule %></td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td><%= student.javaModule %></td>
+            </tr>
+            <tr>
+              <td>Data Structures and Algorithms</td>
+              <td><%= student.dsaModule %></td>
+            </tr>
+            <tr>
+              <td>Database Management System</td>
+              <td><%= student.dbmsModule %></td>
+            </tr>
+            <tr>
+              <td>.Net</td>
+              <td><%= student.dotnetModule %></td>
+            </tr>
+            <tr>
+              <td>Web Programming Technologies</td>
+              <td><%= student.wptModule %></td>
+            </tr>
+            <tr>
+              <td>Software Development Methodologies</td>
+              <td><%= student.sdmModule %></td>
+            </tr>
+            <tr>
+              <td>Advanced Java</td>
+              <td><%= student.advjavaModule %></td>
+            </tr>
+            <tr>
+              <td>Result</td>
+              <td>
+                <span>
+                  <% let status = "Fail"; if ((student.osModule == null ||
+                  student.osModule > 40) && (student.javaModule == null ||
+                  student.javaModule > 40) && (student.dsaModule == null ||
+                  student.dsaModule > 40) && (student.dbmsModule == null ||
+                  student.dbmsModule > 40) && (student.dotnetModule == null ||
+                  student.dotnetModule > 40) && (student.wptModule == null ||
+                  student.wptModule > 40) && (student.sdmModule == null ||
+                  student.sdmModule > 40) && (student.advjavaModule == null ||
+                  student.advjavaModule > 40)) { status = "Pass"; } %> <%=
+                  status %>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+  </body>
+</html>

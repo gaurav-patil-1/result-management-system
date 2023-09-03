@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/37a1c32e18.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/studentLogin.css" />
+  </head>
+  <body style="background-color: #85e6c686">
+    <!-- Navbar -->
+    <header>
+      <div class="px-3 py-2 border-bottom navbar-custom">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <img
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+              src="/svg/logo.png"
+              alt="Custom SVG Image"
+              width="70"
+              height="70"
+            />
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            >
+              <li>
+                <a href="/" class="nav-link text-white">
+                  <p class="navbar-text">Home</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">About Us</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">Instructions</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">Features</p>
+                </a>
+              </li>
+              <li>
+                <a href="/teacher/login" class="nav-link text-white">
+                  <p class="navbar-text">Staff Login</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+
+    <!-- Login Form -->
+    <div class="studentlogin-container">
+      <section class="studentlogin-form" id="login">
+        <div class="head">
+          <h1 class="company">Student Login</h1>
+        </div>
+        <p class="msg">Welcome back</p>
+        <div class="form">
+          <form action="/student/login" method="post">
+            <input
+              type="number"
+              placeholder="Enter your PRN Number"
+              name="prnL"
+              class="number"
+              id="number"
+              required
+            /><br /><br />
+            <label for="dateofbirth" style="color: white">Date of Birth:</label>
+            <input
+              type="date"
+              name="dateofbirthL"
+              class="dateofbirth"
+              required
+              style="margin-top: 5px"
+            /><br />
+            <button class="btn-login" type="submit" value="Submit">
+              Login
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-- Login Form -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

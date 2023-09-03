@@ -1,0 +1,73 @@
+/* Fonts */
+.page-heading {
+  font-family: "Lilita One", cursive;
+}
+
+.custom-heading {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Jumbotrons */
+.jumbotron-1 {
+  border-radius: 10px;
+  background-image: url("../images/jumbotron_1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.jumbotron-2 {
+  background-color: #1d5d9b;
+}
+
+.jumbotron-3 {
+  background-color: #c5dff8;
+}
+
+.jumbotron-2 h2,
+.jumbotron-3 h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.jumbotron-2 p,
+.jumbotron-3 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.jumbotron-2 h2,
+.jumbotron-2 p {
+  color: white;
+}
+
+.jumbotron-3 h2,
+.jumbotron-3 p {
+  color: black;
+}
+
+/* Custom Component */
+.custom-comp {
+  background-color: #1b6b93;
+}
+
+.custom-comp p,
+.custom-comp h1 {
+  color: white;
+}
+
+.custom-comp p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.custom-comp h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}

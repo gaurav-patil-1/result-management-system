@@ -1,0 +1,49 @@
+.marksheet-body {
+  background-color: #f9f9f9;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.marksheet {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.marksheet h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.student-info {
+  margin-bottom: 20px;
+}
+
+.student-info p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.marksheet table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.marksheet th,
+.marksheet td {
+  padding: 10px;
+  text-align: left;
+}
+
+.marksheet th {
+  background-color: #1d5d9b;
+  font-weight: bold;
+  color: white;
+}
+
+.marksheet td:nth-child(odd) {
+  background-color: #fafafa;
+}

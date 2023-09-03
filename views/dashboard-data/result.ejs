@@ -1,0 +1,30 @@
+<h2 class="custom-heading" style="color: #176b87">PG-DAC Students</h2>
+
+<table class="viewall-students">
+  <tr>
+    <th>PRN</th>
+    <th>Name</th>
+    <th>OS</th>
+    <th>Java</th>
+    <th>DSA</th>
+    <th>DBMS</th>
+    <th>.Net</th>
+    <th>WPT</th>
+    <th>SDM</th>
+    <th>AdvJava</th>
+  </tr>
+  <% students.forEach(student => { %>
+  <tr>
+    <td><%= student.prn %></td>
+    <td><%= student.fname %> <%= student.lname %></td>
+    <td><%= student.osModule %></td>
+    <td><%= student.javaModule %></td>
+    <td><%= student.dsaModule %></td>
+    <td><%= student.dbmsModule %></td>
+    <td><%= student.dotnetModule %></td>
+    <td><%= student.wptModule %></td>
+    <td><%= student.sdmModule %></td>
+    <td><%= student.advjavaModule %></td>
+  </tr>
+  <% }); %>
+</table>

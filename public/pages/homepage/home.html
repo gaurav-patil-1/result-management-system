@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/37a1c32e18.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="px-3 py-2 border-bottom navbar-custom">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <img
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+              src="../../svg/logo.png"
+              alt="Custom SVG Image"
+              width="70"
+              height="70"
+            />
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            >
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">About Us</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">Instructions</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <p class="navbar-text">Features</p>
+                </a>
+              </li>
+              <li>
+                <a href="/student/login" class="nav-link text-white">
+                  <p class="navbar-text">Student Login</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="px-3 py-2 border-bottom mb-3">
+        <div class="container d-flex flex-wrap justify-content-end">
+          <div class="text-end">
+            <a href="/teacher/login" type="button" class="btn staffloginbtn"
+              >Staff Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar -->
+
+    <!-- jumbotron -->
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <img
+          src="../../svg/book.png"
+          alt="Book_Svg"
+          class="me-2"
+          width="40"
+          height="32"
+        />
+        <span class="fs-4 page-heading" style="user-select: none"
+          >Result Management System</span
+        >
+      </header>
+
+      <div class="mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5 jumbotron-1">
+          <div class="ol-md-7 offset-md-7">
+            <h1 class="display-5 fw-bold">Success</h1>
+            <p class="col-md-8 fs-4">
+              "Success is no accident. It is hard work, perseverance, learning,
+              studying, sacrifice, and most of all, love of what you are doing
+              or learning to do." – Pelé
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 rounded-3 jumbotron-2">
+            <h2>Staff Login Section</h2>
+            <p>
+              Unlock administrative power with our staff login. Here, you can:
+              <br /><span style="font-weight: bold">Manage Students:</span> Add,
+              remove, and maintain student records. <br /><span
+                style="font-weight: bold"
+                >Update Results:</span
+              >
+              Input module-wise student results.
+            </p>
+            <a
+              href="/teacher/login"
+              class="btn btn-outline-light"
+              type="button"
+            >
+              Staff Login
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 border rounded-3 jumbotron-3">
+            <h2>Student Login Section</h2>
+            <p>
+              Access your academic journey with ease through our student login.
+              Your personalized gateway to success, where you can:
+              <br /><span style="font-weight: bold">Results:</span> Instantly
+              view your module-wise performance. <br /><span
+                style="font-weight: bold"
+                >Track Progress:</span
+              >
+              Monitor your educational growth over time.
+            </p>
+            <a
+              href="/student/login"
+              class="btn btn-outline-secondary"
+              type="button"
+            >
+              Student Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron -->
+
+    <!-- component -->
+    <div class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis custom-comp">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">
+            Sculpting Digital Marvels of Tomorrow
+          </h1>
+          <p class="lead my-3">
+            In the realm of coding, we are the architects of possibility,
+            building intricate bridges between imagination and functionality,
+            transcending limits to sculpt the digital marvels of tomorrow.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- component -->
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- footer -->
+  <div class="container">
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© 2023, All Rights Gaurav Patil</span
+        >
+      </div>
+    </footer>
+  </div>
+  <!-- footer -->
+</html>

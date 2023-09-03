@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/37a1c32e18.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/dashboardComp.css" />
+    <link rel="stylesheet" href="/css/dashboardGlobal.css" />
+
+    <!-- JavaScript -->
+    <script src="/scripts/dashboard.js" defer></script>
+  </head>
+  <body onload="initializePage()">
+    <!-- Navbar -->
+    <section class="my-navbar">
+      <header>
+        <div class="px-3 py-2 border-bottom navbar-custom">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            >
+              <img
+                class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+                src="../../svg/logo.png"
+                alt="Custom SVG Image"
+                width="70"
+                height="70"
+              />
+              <ul
+                class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+              >
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <p class="navbar-text">About Us</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <p class="navbar-text">Instructions</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <p class="navbar-text">Features</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="px-3 py-2 border-bottom mb-3">
+          <div class="container d-flex flex-wrap justify-content-end">
+            <div class="text-end">
+              <a href="/" type="button" class="btn staffloginbtn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <section class="my-sidebar">
+      <div class="custom-sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#students">Students</a>
+        <a href="#admission">Admission</a>
+        <a href="#modules">Modules</a>
+        <a href="#result">Result</a>
+      </div>
+
+      <div class="page-content">
+        <div id="home"><%- include('../dashboard-data/home.ejs') %></div>
+        <div id="dashboard">
+          <%- include('../dashboard-data/coordinatorDashboard.ejs') %>
+        </div>
+        <div id="students">
+          <%- include('../dashboard-data/students.ejs') %>
+        </div>
+        <div id="admission">
+          <%- include('../dashboard-data/admission.ejs') %>
+        </div>
+        <div id="modules"><%- include('../dashboard-data/modules.ejs') %></div>
+        <div id="successful">
+          <%- include('../dashboard-data/successful.ejs') %>
+        </div>
+        <div id="result"><%- include('../dashboard-data/result.ejs') %></div>
+      </div>
+    </section>
+    <!-- Sidebar -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

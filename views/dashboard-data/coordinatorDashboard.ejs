@@ -1,0 +1,25 @@
+<div class="dashboard-components" style="margin-top: 2%">
+  <div class="dashboard-comp first-comp">
+    <i class="icon person"></i>
+    <span><%= students.length %> Students Enrolled</span>
+  </div>
+  <div class="dashboard-comp second-comp">
+    <i class="icon person"></i>
+    <span>
+      <% let passedStudentsCount = 0; students.forEach(function(student) { if (
+      (student.osModule == null || student.osModule > 40) && (student.javaModule
+      == null || student.javaModule > 40) && (student.dsaModule == null ||
+      student.dsaModule > 40) && (student.dbmsModule == null ||
+      student.dbmsModule > 40) && (student.dotnetModule == null ||
+      student.dotnetModule > 40) && (student.wptModule == null ||
+      student.wptModule > 40) && (student.sdmModule == null || student.sdmModule
+      > 40) && (student.advjavaModule == null || student.advjavaModule > 40) ) {
+      passedStudentsCount++; } }); %> <%= passedStudentsCount %> Students
+      Passed</span
+    >
+  </div>
+  <div class="dashboard-comp third-comp">
+    <i class="icon bell"></i>
+    <span><%= students.length - passedStudentsCount %> Students Failed</span>
+  </div>
+</div>

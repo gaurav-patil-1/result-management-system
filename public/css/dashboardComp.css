@@ -1,0 +1,226 @@
+/* DASHBOARD HOME */
+
+.blog-post-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.blog-post-meta {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.blog-post p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.blog-post a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.blog-post a:hover {
+  color: #0056b3;
+}
+
+.blog-post blockquote {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  border-left: 3px solid #007bff;
+}
+
+.blog-post pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.blog-post ul,
+.blog-post ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-post li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* DASHBOARD STUDENTS LINK */
+
+.viewall-students {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.viewall-students th,
+.viewall-students td {
+  text-align: center;
+  padding: 8px;
+}
+
+.viewall-students tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.viewall-students th {
+  background-color: #73bbc9;
+  color: white;
+}
+
+.viewall-students td a img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.viewall-students td a:hover img {
+  transform: scale(1.1);
+}
+
+/* DASHBOARD ADMISSION LINK */
+
+.admit-btn {
+  background-color: #33bbc5;
+  border: none;
+}
+
+.admit-btn:hover {
+  background-color: #614bc3;
+  border: none;
+}
+
+/* DASHBOARD EDIT STUDENT */
+
+.admit-btn {
+  background-color: #33bbc5;
+  border: none;
+}
+.admit-btn:hover {
+  background-color: #614bc3;
+  border: none;
+}
+
+/* DASHBOARD MODULE RESULT */
+
+.edit-marks-input {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+}
+
+.edit-marks-input:hover {
+  border: 1px solid #33bbc5;
+  background-color: #f2f2f2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(51, 187, 197, 0.5);
+}
+
+/* DASHBOARD MODULES */
+
+.module-list {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.module-list:hover {
+  transform: scale(1.05);
+}
+
+.module-list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.module-btn {
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.module-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* DASHBOARD DASHBOARD */
+
+.dashboard-components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dashboard-comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.dashboard-comp i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.dashboard-comp span {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-comp a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.first-comp {
+  background-color: #be6db7;
+  color: #fff;
+  border: none;
+}
+
+.second-comp {
+  background-color: #5b8fb9;
+  color: #fff;
+  border: none;
+}
+
+.third-comp {
+  background-color: #f48484;
+  color: #fff;
+  border: none;
+}

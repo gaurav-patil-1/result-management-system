@@ -1,0 +1,31 @@
+<h2 class="custom-heading" style="color: #176b87"><%= module %></h2>
+<form action="/student/editMarks/<%= module %>" method="post">
+  <table class="viewall-students">
+    <tr>
+      <th>PRN</th>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+    <% students.forEach(student => { %>
+    <tr>
+      <td><%= student.prn %></td>
+      <td><%= student.fname %> <%= student.lname %></td>
+      <td>
+        <input
+          type="number"
+          class="edit-marks-input"
+          name="<%= student.prn %>"
+          value="<%= student[module] %>"
+          data-student-id="<%= student.prn %>"
+          data-module="<%= module %>"
+        />
+      </td>
+    </tr>
+    <% }); %>
+  </table>
+  <br />
+  <br />
+  <button class="w-40 btn btn-primary admit-btn" type="submit">
+    Submit Form
+  </button>
+</form>

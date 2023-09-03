@@ -1,0 +1,42 @@
+<h2 class="custom-heading" style="color: #176b87">PG-DAC Students</h2>
+
+<table class="viewall-students">
+  <tr>
+    <th>PRN</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>DOB</th>
+    <th>Country</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Delete</th>
+    <th>Edit</th>
+  </tr>
+  <% students.forEach(student => { %>
+  <tr>
+    <td><%= student.prn %></td>
+    <td><%= student.fname %></td>
+    <td><%= student.lname %></td>
+    <td>
+      <%= student.dob.toLocaleDateString("en-US", { month: 'short', day:
+      '2-digit', year: 'numeric' }) %>
+    </td>
+    <td><%= student.country %></td>
+    <td><%= student.state %></td>
+    <td><%= student.zip %></td>
+    <td>
+      <a
+        href="/student/delete/<%= student._id %>"
+        onclick="return confirm('Are you sure you want to delete this student?');"
+      >
+        <img src="/svg/delete.svg" width="25px" height="25px" />
+      </a>
+    </td>
+    <td>
+      <a href="/student/edit/<%= student._id %>">
+        <img src="/svg/edit.svg" width="25px" height="25px" />
+      </a>
+    </td>
+  </tr>
+  <% }); %>
+</table>
