@@ -27,6 +27,14 @@ A Result Management System using HTML, CSS, JavaScript, Nodejs, Expressjs, Ejs a
 
 1. Open URL "https://localhost:3000" on a browser.
 
+## Staff Login Username and Password
+
+1.  Username : admin@example.com
+    Password : admin
+
+2.  Username : teacher@example.com
+    Password : teacher
+
 # Screen-Shots
 
 ## Project Structure
