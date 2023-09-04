@@ -35,6 +35,10 @@ A Result Management System using HTML, CSS, JavaScript, Nodejs, Expressjs, Ejs a
 2.  Username : teacher@example.com
     Password : teacher
 
+## Live Demo
+
+link : https://gauravpatilrmsapp.onrender.com
+
 # Screen-Shots
 
 ## Project Structure
