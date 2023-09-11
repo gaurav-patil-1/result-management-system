@@ -40,3 +40,56 @@ A Result Management System using HTML, CSS, JavaScript, Nodejs, Expressjs, Ejs a
 
 link : https://gauravpatilrmsapp.onrender.com
 
+# Screen-Shots
+
+## Project Structure
+
+<img width="267" alt="Project structure" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/Project%20Structure.png">
+
+## HomePage
+
+<img width="50%" alt="homepage" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/homepage.png">
+
+## StaffLogin
+
+<img width="50%" alt="Staff Login" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/staffLogin.png">
+
+## DashBoardHome
+
+<img width="50%" alt="Dashboard Home" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/dashboardHome.png">
+
+## Dashboard
+
+<img width="50%" alt="dashboard" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/dashboard.png">
+
+## Students
+
+<img width="50%" alt="students" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/students.png">
+
+## EditStudent
+
+<img width="50%" alt="Edit Student" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/editStudent.png">
+
+## Admission
+
+<img width="50%" alt="admission" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/admission.png">
+
+## Modules(Subjects)
+
+<img width="50%" alt="modules" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/modules.png">
+
+## Edit Marks
+
+<img width="50%" alt="Edit Marks" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/editMarks.png">
+
+## Result
+
+<img width="50%" alt="result" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/result.png">
+
+## StudentLogin
+
+<img width="50%" alt="Student Login" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/studentLogin.png">
+
+## Marksheet
+
+<img width="50%" alt="marksheet" src="https://raw.githubusercontent.com/gaurav-patil-1/my-raw-files/main/Result-Management-System/marksheet.png">
