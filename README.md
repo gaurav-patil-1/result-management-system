@@ -1,11 +1,11 @@
 # Result-Management-System
 
-
+---
 A Result Management System using HTML, CSS, JavaScript, Nodejs, Expressjs, Ejs and Mongoose<br/>
 • Seperate login section to the application for staff and student on homepage.<br/>
 • Students can enter their prn number and date of birth to view their result.<br/>
 • Teachers can View all records, add new record, edit and delete the records module-wise(subject-wise).<br/>
-
+---
 # Setup Guide
 
 ## Database
